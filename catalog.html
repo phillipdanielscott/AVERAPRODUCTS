@@ -3,6 +3,7 @@
   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catalog</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" media="screen" title="no title">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -15,8 +16,44 @@
   </head>
   <body class="catalogContainer">
 
-    <div id="main_area">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <a href="index.html"><img id="navlogo"src="logo2.png" alt=""></a>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li>
+                          <a href="catalog.html">CATALOG</a>
+                      </li>
+                        <li>
+                            <a href="contact.html">CONTACT</a>
+                        </li>
 
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+    <div id="main_area">
+      <div id="noIphone"class="row top-buffer">
+      </div>
+      <div class="row top-buffer">
+      </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-offset-3" id="carousel-bounding-box">
                             <div class="carousel slide" id="myCarousel">

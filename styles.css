@@ -27,40 +27,13 @@ a {
     text-decoration: none;
     transition: color 0.1s, background-color 0.1s;
 }
-a {
 
-    position: relative;
-    display: block;
-    padding: 16px 0;
-    margin: 0 12px;
-    letter-spacing: 1px;
-    font-size: 23px;
-    line-height: 16px;
-    font-weight: 900;
-    text-transform: uppercase;
-    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
-    color: white;
-}
-a::before {
-  font-size: 23px;
+.brand { margin-left: auto; margin-right: auto; }
+/*.brand { left: 50%; margin-left: -100px; }*/
 
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    transform-origin: right top;
-    transform: scale(0, 1);
-    transition: color 0.1s,transform 0.2s ease-out;
-}
-a:active::before {
-  font-size: 23px;
 
-    background-color: #000;
-}
+
+
 a:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
@@ -80,6 +53,9 @@ a:hover { text-decoration: none; color:white; }
   background-size: cover;
   background-repeat: no-repeat;
     height: 600px;
+  }
+  #logo2{
+   width: 150px;
   }
 #basicInfo{
   border: 2px solid white;
@@ -148,11 +124,36 @@ h2{
   /* Put this on top of the blurred layer */
   position: relative;
   z-index: 100;
-  padding:10px;
-  background: rgb(34,34,34); /* for IE */
+  padding: 10px;
+  background: rgb(34,34,34);
   background: rgba(34,34,34,0.75);
-  height: 350px;
+  height: 477px;
 
+}
+#navlogo{
+      width: 242px;
+}
+.carousel-control.left {
+    /* background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    /* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+    /* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+
+
+.nav.nav-center {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin:0;
+    float:none;
+}
+
+.navbar-inner{
+    text-align:center;
 }
 
 
@@ -250,6 +251,165 @@ width: 1000px;*/
 /*body{
   animation: fadein 2s;
 }*/
+
+
+
+/*//////media queries///////////*/
+
+
+/*@media only screen and (min-width : 1232px) and (max-width : 1343px) {
+  #logo{
+    width: 1200px;
+      position: relative;
+      right: 109px;
+  }
+}*/
+
+@media screen
+and (min-width: 1280px)
+and (max-width: 1484px) {
+  #logo{
+    position: relative;
+  right: -29px;
+  top: -7px;
+  }
+
+#flowerLogo{
+  position: relative;
+  right: -3px;
+  top: -7px;
+}
+
+}
+
+
+
+
+/*///macbook pro 15 inch///*/
+
+@media screen
+and (min-width: 1025px)
+and (max-width: 1280px) {
+
+#logo{
+  position: relative;
+  right: 40px;
+  top: -7px;
+}
+#flowerLogo{
+  position: relative;
+  right: -3px;
+  top: 4px;
+}
+
+#navlogo{
+  /*width: 0px;*/
+  /*position: absolute;*/
+  /*display: inline-block;*/
+}
+
+
+ }
+
+
+
+
+@media screen
+and (min-width: 588px)
+and (max-width: 1025px) {
+
+#flowerLogo{
+  margin: 0 auto;
+width: 80px;
+position: relative;
+right: 2px;
+top: 3px;
+}
+#logo{
+  width: 1000px;
+    left: 36px;
+    position: relative;
+}
+ }
+
+
+
+
+
+/*////iphone 6 portrait mode//////*/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+#carousel-bounding-box{
+  position: relative;
+      right: -134px;
+      bottom: -169px;
+      width: 60%;
+}
+
+#logo{
+  width: 1000px;
+position: relative;
+right: 3px;
+bottom: -100px;
+}
+#search{
+  bottom: -194px;
+}
+
+
+}
+
+/*////iphone 6 landscape/////*/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+#noIphone{
+  display: none;
+}
+}
+
+/*///////iphone 6 PLUS landscape///////*/
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+
+}
+
+
+
+/*/////iphone 5s landscape//////*/
+
+/*@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  img {
+    margin: 0 auto;
+    width: 0px;
+    position: relative;
+    right: -130px;
+    top: -7px;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen
 and (min-device-width : 375px)

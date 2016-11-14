@@ -1,11 +1,8 @@
 jQuery(document).ready(function($) {
   $('body').fadeIn();
 
-      $('#myCarousel').carousel({
-              interval: 5000
-      });
 
-      Handles the carousel thumbnails
+
       $('[id^=carousel-selector-]').click(function () {
       var id_selector = $(this).attr("id");
       try {
@@ -16,7 +13,6 @@ jQuery(document).ready(function($) {
           console.log('Regex failed!', e);
       }
   });
-      When the carousel slides, auto update the text
       $('#myCarousel').on('slid.bs.carousel', function (e) {
                var id = $('.item.active').data('slide-number');
               $('#carousel-text').html($('#slide-content-'+id).html());
